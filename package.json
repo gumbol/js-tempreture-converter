@@ -9,10 +9,10 @@
     "type": "git",
     "url": "https://github.com/gumbol/js-tempreture-converter.git"
   },
-   "scripts": {
+  "scripts": {
     "start": "node js/tempreture-converter.js"
   },
-   "engines": {
+  "engines": {
     "node": "14.x"
   }
 }
