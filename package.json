@@ -1,0 +1,16 @@
+{
+  "name": "js-tempreture-converter",
+  "version": "1.0.0",
+  "description": "convert tempreture between Celsius and Fahrenheit",
+  "main": "index.html",
+  "author": "Tarik Alyahya",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gumbol/js-tempreture-converter.git"
+  },
+   "scripts": {
+    "start": "node index.js",
+    "test": "node test.js"
+  }
+}
