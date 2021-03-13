@@ -2,7 +2,7 @@
   "name": "js-tempreture-converter",
   "version": "1.0.0",
   "description": "convert tempreture between Celsius and Fahrenheit",
-  "main": "index",
+  "main": "index.html",
   "author": "Tarik Alyahya",
   "license": "MIT",
   "repository": {
