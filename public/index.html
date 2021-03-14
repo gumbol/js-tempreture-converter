@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Tempreture Conversion | Tarik Alyahya</title>
+    <title>Tempreture Converter | Tarik Alyahya</title>
     <link rel="shortcut icon" href="../logo64.png" />
     <!-- Describe the page content -->
     <meta
@@ -16,43 +16,64 @@
     />
     <meta name="viewport" content="width=device-width scale-1" />
     <!-- IMPORTANT: adjust the relative links as nessecary -->
-    <link rel="stylesheet" type="text/css" href="../styles/start-layout.css" />
-    <link rel="stylesheet" type="text/css" href="../styles/tania-css.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
     <script src="javascripts/class-tempreture.js"></script>
     <style>
-article {
-  background-color: rgb(207, 216, 207);
-          min-width: 320px;
-          width: 50%;
-          margin: 0 auto 10px;
-        
-}
-input{
-  padding: 10px; width: 99%; margin-bottom: 5px;
-  text-align: center;
-}
+      article {
+        background-color: rgb(207, 216, 207);
+        min-width: 320px;
+        width: 50%;
+        margin: 0 auto 10px;
+        padding-bottom: 80px;
+      }
+
+      input {
+        padding: 10px;
+        width: 99%;
+        margin-bottom: 5px;
+      }
+
+       #result {
+        position: absolute;
+        font-size: 25px;
+        margin-top: 20px;
+        text-align: center;
+        top: 410px;
+        left:0;
+
+      }
+
+
+
+    #site-top {
+      margin-bottom: 30px;
+      background: var(--sf-img-6) 0 10% / auto 80% no-repeat;
+      min-height: 9em;
+      border-bottom: 1px solid;
+    }
+    #site-top a {
+      margin-top: -10px;
+    }
 
     </style>
   </head>
 
   <body>
     <!--target="_blank" rel="noreferrer noopener"-->
+
+    <!--main header"-->
     <header id="site-top">
-      <a href="../index.html">gumbol.github.io</a>
+      <a href="https://gumbol.github.io/">gumbol.github.io</a>
     </header>
-    <!-- The site main-nav menu -->
-    <nav class="navigate">
-      <a href="blog.html">Articles</a>
-      <a href="../about.html">About</a>
-    </nav>
 
     <main>
       <article>
-        <h2>Tempreture conversion app</h2>
+        <h2>Tempreture converter app</h2>
         <p>Enter a number between -1000 and 1000</p>
+
         <input
-          name="tempreture"
           id="temp"
+          name="tempreture"
           placeholder="Enter a number"
           maxlength="5"
           autocomplete="off"
@@ -60,74 +81,55 @@ input{
 
         <br />
 
-        <button style="width: 150px" onclick="f()">
-          Celsius To Fahrenheit
-        </button>
+        <button style="width: 150px" onclick="toF()">To &Fopf;</button>
 
-        <button style="width: 150px" onclick="c()">
-          Fahrenheit To Celsius
-        </button>
+        <button style="width: 150px" onclick="toC()">To &Cfr;</button>
 
-        <p id="result" style="font-size: 25px; margin-top: 20px"></p>
-        <a
-        class="button-style1"
-        href="https://github.com/gumbol/js-tempreture-converter"
-        target="_blank"
-        rel="noreferrer noopener"
-        >Source code</a
-      >
+  <p id="result"></p>
+
+
+        
+
       </article>
     </main>
 
-    <script src="javascripts/tempreture-converter.js"></script>
+    <script src="javascripts/temp-converter-v1.js"></script>
 
-    <section class="blurb">
-      <img
-        class="my-avatar"
-        src="../me2-150w-02.webp"
-        width="150"
-        height="200"
-        alt="Me"
-      />
+  
 
-      <div class="author-info">
-        <h3>About the author</h3>
-        <p>
-          Hi I am <a href="../about.html">Tarik</a>, I'm a web developer,
-          writer, and open-source creator. This website is my digital canvas — a
-          collection of the things I've learned and created over the years.
-        </p>
-
-        <nav>
+    <footer id="global">
+      <div>
+        <nav class="site-links">
+          Author: <a href="https://gumbol.github.io/about">Tarik Alyahya</a>
+<!-- add the source code link-->
           <a
-            class="coffee-btn"
-            href="https://ko-fi.com/tyah2"
+            class="btn1"
+            href=""
             target="_blank"
-            rel="noreferrer"
-            >Buy me a coffee
+            rel="noreferrer noopener"
+            >Source code</a
+          >
+
+          <a href="https://gumbol.github.com/posts/my-projects.html"
+            >More Projects</a
+          >
+        </nav>
+
+        <nav class="out-links">
+          <a
+            href="https://github.com/gumbol"
+            title="Github mascot"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="images/github-32x-01.png"
+              alt="GitHub"
+              width="32"
+            />
           </a>
         </nav>
       </div>
-    </section>
-
-    <footer>
-      <nav class="site-links">
-        <a href="blog.html">Articles</a>
-        <a href="gallery.html">Gallery</a>
-      </nav>
-
-      <nav class="out-links">
-        <a
-          href="https://github.com/gumbol"
-          title="Github mascot"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="../media/icons/github-32x-01.png" alt="GitHub" width="32" />
-        </a>
-      </nav>
-
-      <p id="sig">&copy; 2020 Tyah</p>
     </footer>
   </body>
 </html>
