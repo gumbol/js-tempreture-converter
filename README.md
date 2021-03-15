@@ -1,7 +1,8 @@
 # Tempreture converter
  <img src="https://img.shields.io/badge/License-MIT-blue.svg">
 A lightweight javascript app that converts tempreture between Celsius and Fahrenheit
-Here is a [Demo](https://js-tempreture-converter.herokuapp.com)
+
+[Here is a Demo](https://js-tempreture-converter.herokuapp.com)
 
 ## Requirments
 The repository files
